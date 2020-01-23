@@ -195,8 +195,6 @@
 @media (max-width: 767px) {
   .feels {
     grid-auto-columns: 15vw;
-    -ms-grid-columns: 15vw;
-    grid-template-columns: 15vw;
   }
   .response {
     -webkit-box-pack: center;
