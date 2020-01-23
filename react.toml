@@ -1,0 +1,17 @@
+pre = '''
+import React, {FC, ReactElement} from 'react';
+import {getSlots} from "../slots";
+
+const % = props => {
+	const {slots, orphans} = getSlots(props.children);
+	return '''
+post = '''
+;
+};
+
+export default %;
+'''
+replacement = '''{slots.% ? slots.% : ""}'''
+attributes = "{...props.%}"
+content = "{ orphans }"
+file_extention = "jsx"
